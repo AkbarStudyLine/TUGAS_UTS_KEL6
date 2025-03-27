@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Organ Tubuh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="z-10 text-white p-4 flex justify-between items-center shadow-lg fixed w-full backdrop-blur-md"
+      style="background-color: rgba(122, 122, 122, 0.3)"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4221/4221419.png"
+          alt="Logo"
+          class="w-8 h-8"
+        />
+        <a href="index.html"><h1 class="text-2xl font-bold">BioLearn</h1></a>
+      </div>
+
+      <!-- Menu untuk layar besar -->
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li>
+          <a
+            href="profileDev.html"
+            class="hover:text-yellow-300 transition duration-300"
+            >ProfileDev</a
+          >
+        </li>
+        <li>
+          <a
+            href="kuiz.html"
+            class="hover:text-yellow-300 transition duration-300"
+            >Kuis</a
+          >
+        </li>
+        <li>
+          <a
+            href="materifiks.html"
+            class="hover:text-yellow-300 transition duration-300"
+            >Materi</a
+          >
+        </li>
+        <li>
+          <a
+            href="miniGame.html"
+            class="hover:text-yellow-300 transition duration-300"
+            >Mini Game</a
+          >
+        </li>
+      </ul>
+
+      <!-- github button -->
+      <button class="Btn">
+        <span class="svgContainer">
+          <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path>
+          </svg>
+        </span>
+        <span class="BG"></span>
+      </button>
+      <!-- end of github button  -->
+
+      <!-- Tombol Hamburger -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <!-- Menu Mobile -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-16 left-0 w-full text-white flex flex-col items-center py-4 space-y-4 shadow-lg"
+        style="background-color: rgba(122, 122, 122)"
+      >
+        <a
+          href="profileDev.html"
+          class="hover:text-yellow-300 transition duration-300"
+          >ProfileDev</a
+        >
+        <a
+          href="kuiz.html"
+          class="hover:text-yellow-300 transition duration-300"
+          >Kuis</a
+        >
+        <a
+          href="materifiks.html"
+          class="hover:text-yellow-300 transition duration-300"
+          >Materi</a
+        >
+        <a
+          href="miniGame.html"
+          class="hover:text-yellow-300 transition duration-300"
+          >Mini Game</a
+        >
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Halaman Kuis -->
+    <main class="">
+      <section
+        id="quiz"
+        class="p-16 bg-white text-gray-900 text-left min-h-screen flex flex-col items-center"
+        style="
+          background-image: url('img/2023_EngineeredMicrobes_800x450-2.gif');
+        "
+      >
+        <h2 class="text-4xl font-bold mb-6 text-white">
+          Kuis Interaktif: Organ Tubuh
+        </h2>
+        <p class="text-lg mb-4 text-white">
+          Jawablah pertanyaan berikut untuk menguji pengetahuanmu!
+        </p>
+
+        <div
+          id="quiz-container"
+          class="bg-blue-200 p-6 rounded-lg shadow-lg w-full max-w-2xl"
+        >
+          <h3 id="question" class="text-xl font-semibold mb-4">
+            Pertanyaan akan muncul di sini
+          </h3>
+          <div id="answers" class="grid grid-cols-2 gap-4">
+            <button
+              class="answer bg-white p-4 rounded-lg shadow-md hover:bg-yellow-300 transition"
+              onclick="checkAnswer(0)"
+            >
+              Opsi A
+            </button>
+            <button
+              class="answer bg-white p-4 rounded-lg shadow-md hover:bg-yellow-300 transition"
+              onclick="checkAnswer(1)"
+            >
+              Opsi B
+            </button>
+            <button
+              class="answer bg-white p-4 rounded-lg shadow-md hover:bg-yellow-300 transition"
+              onclick="checkAnswer(2)"
+            >
+              Opsi C
+            </button>
+            <button
+              class="answer bg-white p-4 rounded-lg shadow-md hover:bg-yellow-300 transition"
+              onclick="checkAnswer(3)"
+            >
+              Opsi D
+            </button>
+          </div>
+          <p id="feedback" class="mt-4 font-semibold"></p>
+        </div>
+
+        <button
+          onclick="nextQuestion()"
+          class="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-yellow-300 transition"
+        >
+          Pertanyaan Berikutnya
+        </button>
+      </section>
+    </main>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      const questions = [
+        {
+          question: "Apa organ yang berfungsi memompa darah ke seluruh tubuh?",
+          options: ["Paru-paru", "Jantung", "Hati", "Ginjal"],
+          answer: 1,
+        },
+        {
+          question: "Organ apa yang bertanggung jawab untuk mencerna makanan?",
+          options: ["Usus", "Lambung", "Hati", "Paru-paru"],
+          answer: 1,
+        },
+        {
+          question: "Bagian tubuh mana yang digunakan untuk bernapas?",
+          options: ["Paru-paru", "Hati", "Ginjal", "Lambung"],
+          answer: 0,
+        },
+      ];
+
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      function loadQuestion() {
+        const questionData = questions[currentQuestionIndex];
+        document.getElementById("question").innerText = questionData.question;
+        const buttons = document.querySelectorAll(".answer");
+        buttons.forEach((button, index) => {
+          button.innerText = questionData.options[index];
+        });
+        document.getElementById("feedback").innerText = "";
+      }
+
+      function checkAnswer(selectedIndex) {
+        const questionData = questions[currentQuestionIndex];
+        if (selectedIndex === questionData.answer) {
+          document.getElementById("feedback").innerText = "✅ Jawaban benar!";
+          document.getElementById("feedback").classList.add("text-green-600");
+          score += 10; // Tambah poin
+        } else {
+          document.getElementById("feedback").innerText =
+            "❌ Jawaban salah. Coba lagi!";
+          document.getElementById("feedback").classList.add("text-red-600");
+        }
+      }
+
+      function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+          loadQuestion();
+        } else {
+          document.getElementById("quiz-container").innerHTML = `
+            <h3 class='text-xl font-semibold'>Kuis selesai! 🎉</h3>
+            <p class='text-lg'>Skor Akhir: <strong>${score}</strong></p>
+            <button onclick="window.location.href='index.html'" class="mt-6 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-blue-400 transition">
+              Kembali ke Halaman Utama
+            </button>
+          `;
+        }
+      }
+
+      loadQuestion();
+    </script>
+  </body>
+</html>
